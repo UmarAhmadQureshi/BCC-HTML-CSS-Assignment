@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="http://www.piaic.org/chapter7.php" method="get">
+   <fieldset>
+    <legend>
+        Contact Details:
+    </legend>
+    <label for="txt_fullname">Name: <br />
+        <input type="text" id="txt_fullname" required />
+    </label> <br />
+    <label for="txt_email">Email: <br/>
+        <input type="email" id="txt_email" required/>
+    </label>
+</fieldset>
+<br/>
+<fieldset>
+    <legend>Your Review:</legend>
+    <p>How did you hear abous us?
+    <select name="opt_choices">
+        <option value="google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other...</option>
+    </select></p>
+    <p>Would you visit again?</p>
+    <input type="radio" name="rd_visit" value="yes" checked = "checked"/> <label for="yes">Yes</label>
+    <input type="radio" name="rd_visit" value="no" /> <label for="no">No</label>
+    <input type="radio" name="rd_visit" value="maybe" /> <label for="Maybe">Maybe</label>
+    <br/>
+    <p>Comments: <br>
+        <textarea name="comments" id="" cols="50" rows="5"></textarea>
+    </p>
+
+
+    <p><input type="checkbox" name="chk_emailyes" value="yes"> Sign me up for email updates</p>
+
+    <button type="submit" >Submit review</button>
+</fieldset>
+</form>
+    
+</body>
+</html>
